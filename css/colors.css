@@ -1,0 +1,28 @@
+:root {
+    /* Major colors */
+    --default-color: #1C3C73;
+    --primary-color: #008FF5;
+    --secondary-color: #FCE762;
+    --accent-color: #21295C;
+    --success-color: #22BB33;
+    --danger-color: #F32013;
+    --warning-color: #FFCC00;
+
+    /* Fixed colors for certain properties */
+    --white-color: #f7f7f7;
+    --black-color: #282828;
+    --gray-color: #9a9a9a;
+    --box-shadow-color: rgb(0 0 0 / 0.1);
+    
+    /* Shades of Major colors */
+    --default-hover-color: #183363;
+    --primary-hover-color: #0070C0;
+    --secondary-hover-color: #F6D605;
+    --success-hover-color: #1B9229;
+    --danger-hover-color: #C2130A;
+    --warning-hover-color: #DBAF00;
+
+    /* Text colors */
+    --content-text-color: #333;
+    --text-over-primary-color: #161616;
+}
