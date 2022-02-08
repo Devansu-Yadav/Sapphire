@@ -140,7 +140,11 @@ body {
 }
 
 .code-snippet {
-    width: 100%;
+    display: block;
+    width: 90%;
+    font-style: initial;
+    font-size: 1.6rem;
+    padding: 0.5rem;
 }
 
 /* ---------------------------------------> Responsive CSS <------------------------------------ */
