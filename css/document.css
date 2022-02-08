@@ -1,0 +1,206 @@
+body {
+    background-color: var(--white-color);
+}
+
+/* ------------------------------------> NavBar <------------------------------------------ */
+.navbar {
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+}
+
+#nav-logo {
+    margin-left: 1.5rem;
+}
+
+#nav-logo .logo {
+    width: 200px;
+}
+
+.nav-items {
+    font-size: 1.8rem;
+}
+
+#nav-menu {
+    display: none;
+}
+
+.nav-items a {
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
+.nav-items li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px var(--primary-color);
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-items li:hover:after {
+    transform: scaleX(0.75);
+}
+
+/* ----------------------------------------> Document Container & Sidebar <-------------------------------  */
+.docs-container {
+    display: flex;
+    min-width: 400px;
+    height: 100vh;
+    padding: 2rem 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sidebar {
+    width: 300px;
+    overflow-y: scroll;
+    background-color: var(--white-color);
+    height: 100%;
+}
+
+.sidebar-nav {
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    margin-left: 2rem;
+}
+
+.sidebar-heading {
+    margin: 1.3rem;
+    color: var(--primary-color);
+}
+
+.sidebar-item {
+    width: 80%;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: var(--default-color);
+}
+
+.divide-nav-items {
+    width: 90%;
+    margin: 0.3rem 0.5rem;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.sidebar-item:hover {
+    background-color: var(--hover-color);
+}
+
+/* ---------------------------------------> Component Container <--------------------------------- */
+.component-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 0 2rem;
+    overflow-y: scroll;
+}
+
+.content-divider {
+    width: 90%;
+    margin: 0.3rem 0.5rem 0.3rem 0;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.comp-intro .intro-heading {
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+}
+
+.intro-content {
+    color: var(--content-text-color);
+}
+
+/*          ------------------------> Component Section <------------------------       */
+.comp-heading {
+    color: var(--primary-color);
+}
+
+.comp-description {
+    color: var(--content-text-color);
+}
+
+.class-to-apply-for-comp {
+    color: var(--primary-color);
+    background-color: var(--code-bg-color);
+}
+
+.code {
+    color: var(--danger-color);
+    background-color: var(--code-bg-color);
+}
+
+.comp-box {
+    width: 80%;
+    border: 5px solid var(--primary-color);
+    padding: 3rem 0;
+    margin: 2rem 0;
+    column-gap: 1rem;
+}
+
+.code-snippet {
+    width: 100%;
+}
+
+/* ---------------------------------------> Responsive CSS <------------------------------------ */
+@media only screen and (max-width: 700px) {
+    .component-container {
+        width: 100%;
+    }
+
+    #nav-menu {
+        font-size: 1.8rem;
+        display: block;
+        color: var(--primary-color);
+        padding: 0 1rem;
+    }
+
+    .sidebar {
+        display: none;
+        overflow-y: scroll;
+        position: absolute;
+        top: 89px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .sidebar-nav {
+        margin-left: 2.5rem;
+    }
+
+    .sidebar-item {
+        width: 95%;
+    } 
+}
+
+@media only screen and (max-width: 522px) {
+    .docs-container {
+        min-width: 330px;
+    }
+
+    .sidebar-item {
+        font-size: 1.6rem;
+    }
+
+    .component-container {
+        padding: 0;
+    }
+
+    #nav-logo .logo {
+        width: 100px;
+    }
+
+    #nav-menu, .nav-items {
+        font-size: 1.6rem;
+    }
+
+    #nav-menu, .nav-items a {
+        padding: 0;
+    }
+
+    .comp-box {
+        width: 300px;
+    }
+}
