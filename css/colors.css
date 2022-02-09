@@ -17,13 +17,21 @@
     --box-shadow-color: rgb(0 0 0 / 0.1);
     --code-bg-color: rgba(175, 184, 193, 0.2);
     
-    /* Shades of Major colors */
-    --default-hover-color: #183363;
-    --primary-hover-color: #0070C0;
-    --secondary-hover-color: #F6D605;
-    --success-hover-color: #1B9229;
-    --danger-hover-color: #C2130A;
-    --warning-hover-color: #DBAF00;
+    /* Darker Shades of Major colors */
+    --default-darker-color: #162F5A;
+    --primary-darker-color: #0066AF;
+    --secondary-darker-color: #F6D605;
+    --success-darker-color: #167721;
+    --danger-darker-color: #B01209;
+    --warning-darker-color: #806600;
+
+    /* Lighter Shades of Major colors */
+    --default-lighter-color: #6B94DB;
+    --primary-lighter-color: #8DD0FF;
+    --secondary-lighter-color: #FDEE90;
+    --success-lighter-color: #96ECA0;
+    --danger-lighter-color: #FA9E99;
+    --warning-lighter-color: #FFE992;
 
     /* Text colors */
     --content-text-color: #333;
