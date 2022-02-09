@@ -1,0 +1,47 @@
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+}
+
+.avatar-lg {
+    width: 120px;
+    height: 120px;
+}
+
+.avatar-md {
+    width: 100px;
+    height: 100px;
+}
+
+.avatar-sm {
+    width: 70px;
+    height: 70px;
+}
+
+.avatar-square {
+    border-radius: 1rem;
+}
+
+/* -------------------------------> Responsive CSS <------------------------------- */
+@media only screen and (max-width: 522px) {
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-lg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .avatar-md {
+        width: 60px;
+        height: 60px;
+    }
+
+    .avatar-sm {
+        width: 30px;
+        height: 30px;
+    }
+}

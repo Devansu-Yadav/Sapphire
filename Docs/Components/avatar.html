@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire: Avatar</title>
+    <link rel="stylesheet" href="/css/components.css"/>
+    <link rel="stylesheet" href="/css/document.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar centered-flex-row-container shadow-md">
+        <a id="nav-logo" href="/index.html">
+            <img src="/assets/images/Sapphire lib Logo 2.png" class="logo"/>
+        </a>
+        <div class="navigation centered-flex-row-container">
+            <ul class="nav-items centered-flex-row-container">
+                <li class="space-S"><a href="/index.html">Home</a></li>
+                <li class="space-S"><a href="./avatar.html">Documentation</a></li>
+            </ul>
+            <i id="nav-menu" class="space-S fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="docs-container space-XXL">
+        <aside class="sidebar">
+            <nav class="sidebar-nav centered-flex-col-container">
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Get Started</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/introduction.html">
+                    <div class="sidebar-item-txt">Introduction</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/colors.html">
+                    <div class="sidebar-item-txt">Colors</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/typography.html">
+                    <div class="sidebar-item-txt">Typography</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/conclusion.html">
+                    <div class="sidebar-item-txt">Conclusion</div>
+                </a>
+
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Components</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./avatar.html">
+                    <div class="sidebar-item-txt link-active">Avatar</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./alert.html">
+                    <div class="sidebar-item-txt">Alert</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./badge.html">
+                    <div class="sidebar-item-txt">Badge</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./button.html">
+                    <div class="sidebar-item-txt">Button</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./card.html">
+                    <div class="sidebar-item-txt">Card</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./image.html">
+                    <div class="sidebar-item-txt">Image</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./input.html">
+                    <div class="sidebar-item-txt">Input</div>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="component-container space-XL">
+            <section class="comp-intro">
+                <h1 class="heading-1 intro-heading">Avatar</h1>
+                <p class="intro-content para-4">
+                    An Avatar is a graphical representation of a user or the user's character or persona. They can be custom photos uploaded by users, or generated as Identicons as a placeholder.
+                </p>
+            </section>
+            <br>
+            <br>
+            <br>
+            <hr class="content-divider">
+            <br>
+            <br>
+            <br>
+            
+            <section class="component-section">
+                <!-- Profile Avatar -->
+                <h3 class="heading-3 comp-heading">Profile Avatars</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Profile Avatars can be created by adding the <span class="class-to-apply-for-comp">.avatar</span> class on the <code class="code">&lt;img&gt;</code> tag.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <img src="/assets/images/avatar-1.jpg" class="avatar"/>
+                    <img src="/assets/images/avatar-2.jpg" class="avatar"/>
+                    <img src="/assets/images/avatar-4.jpg" class="avatar"/>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L18-20&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+                
+                <!-- Sized Avatars -->
+                <h3 class="heading-3 comp-heading">Sized Avatars</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Size of the avatars can be adjusted by choosing either <span class="class-to-apply-for-comp">.avatar-lg</span> | <span class="class-to-apply-for-comp">.avatar-md</span> | <span class="class-to-apply-for-comp">.avatar-sm</span> classes.
+                </p>
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <img src="/assets/images/avatar-1.jpg" class="avatar avatar-lg"/>
+                    <img src="/assets/images/avatar-3.jpg" class="avatar avatar-md"/>
+                    <img src="/assets/images/avatar-2.jpg" class="avatar avatar-sm"/>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L25-27&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Square Avatars -->
+                <h3 class="heading-3 comp-heading">Square Avatars</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Add square avatars using the <span class="class-to-apply-for-comp">.avatar-square</span> class.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <img src="/assets/images/avatar-1.jpg" class="avatar avatar-lg avatar-square"/>
+                    <img src="/assets/images/avatar-3.jpg" class="avatar avatar-md avatar-square"/>
+                    <img src="/assets/images/avatar-2.jpg" class="avatar avatar-sm avatar-square"/>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L32-34&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src="../nav-menu.js"></script>
+</body>
+</html>
