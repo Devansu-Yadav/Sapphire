@@ -3,8 +3,8 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: 4px;
-    right: 3px;
+    bottom: 5px;
+    right: 4px;
     border: 3px solid var(--white-color);
 }
 
@@ -13,7 +13,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: -1px;
+    bottom: 2px;
     right: -2px;
     border: 3px solid var(--white-color);
 }
@@ -27,7 +27,7 @@
     height: 18px;
     padding: 0.3rem;
     position: absolute;
-    background-color: var(--default-color);
+    background-color: var(--primary-darker-color);
 }
 
 .badge-number {
@@ -80,4 +80,37 @@
 
 .badge-away {
     background-color: var(--warning-color);
+}
+
+/* -----------------------------------------> Responsive CSS <--------------------------------- */
+@media only screen and (max-width: 522px) {
+    .badge-xs {
+        width: 30px;
+        height: 30px;
+    }
+
+    .badge-lg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .badge-md {
+        width: 10px;
+        height: 10px;
+    }
+
+    .badge-sm {
+        width: 5px;
+        height: 5px;
+    }
+
+    .badge-round-avatar {
+        bottom: 5px;
+        right: 2px;
+    }
+
+    .badge-square-avatar {
+        bottom: 4px;
+        right: -1px;
+    }
 }

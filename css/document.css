@@ -98,7 +98,7 @@ body {
 }
 
 .content-divider {
-    width: 90%;
+    width: 98%;
     margin: 0.3rem 0.5rem 0.3rem 0;
     border-bottom: 1px solid var(--gray-color);
 }
