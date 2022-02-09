@@ -1,0 +1,186 @@
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    filter: brightness(85%);
+}
+
+/* ------------------------------------> Primary Buttons <-------------------------------------- */
+.btn-primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    color: var(--white-color);
+    background-color: var(--secondary-darker-color);
+}
+
+.btn-default {
+    color: var(--white-color);
+    background-color: var(--default-color);
+}
+
+.btn-success {
+    color: var(--white-color);
+    background-color: var(--success-color);
+}
+
+.btn-error {
+    color: var(--white-color);
+    background-color: var(--danger-color);
+}
+
+.btn-disable {
+    color: var(--white-color);
+    background-color: var(--gray-color);
+    cursor: not-allowed;
+}
+
+/* -----------------------------------------> Outline Buttons <-------------------------------- */
+.btn-outline-primary {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    filter: none;
+}
+
+.btn-outline-secondary {
+    color: var(--secondary-darker-color);
+    background-color: transparent;
+    border: 1px solid var(--secondary-darker-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-darker-color);
+    color: var(--white-color);
+    filter: none;
+}
+
+.btn-outline-default {
+    color: var(--default-color);
+    background-color: transparent;
+    border: 1px solid var(--default-color);
+}
+
+.btn-outline-default:hover {
+    background-color: var(--default-color);
+    color: var(--white-color);
+    filter: none;
+}
+
+.btn-outline-success {
+    color: var(--success-color);
+    background-color: transparent;
+    border: 1px solid var(--success-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--success-color);
+    color: var(--white-color);
+    filter: none;
+}
+
+.btn-outline-error {
+    color: var(--danger-color);
+    background-color: transparent;
+    border: 1px solid var(--danger-color);
+}
+
+.btn-outline-error:hover {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+    filter: none;
+}
+
+.btn-outline-disable {
+    color: var(--gray-color);
+    background-color: transparent;
+    border: 1px solid var(--gray-color);
+    cursor: not-allowed;
+}
+
+/* ---------------------------------------------> Link Buttons <------------------------------- */
+.btn-link {
+    font-size: 1.8rem;
+}
+
+.btn-link:hover {
+    filter: brightness(85%);
+}
+
+.btn-link-primary {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.btn-link-secondary {
+    color: var(--secondary-darker-color);
+    background-color: transparent;
+    border-bottom: 1px solid var(--secondary-darker-color);
+}
+
+.btn-link-default {
+    color: var(--default-color);
+    background-color: transparent;
+    border-bottom: 1px solid var(--default-color);
+}
+
+/* -----------------------------------------> Icon Button <----------------------------------- */
+.btn-icon {
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.btn-icon:hover {
+    filter: brightness(85%);
+}
+
+.btn-icon-primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-icon-secondary {
+    color: var(--white-color);
+    background-color: var(--secondary-darker-color);
+}
+
+.btn-icon-default {
+    color: var(--white-color);
+    background-color: var(--default-color);
+}
+
+/* ----------------------------------------------> Floating Action Buttons <-------------------- */
+.btn-float {
+    padding: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px var(--box-shadow-color);
+}
+
+.btn-float:hover {
+    filter: brightness(85%);
+}
+
+/* ------------------------------------------> Responsive CSS <--------------------------------- */
+@media only screen and (max-width: 522px) {
+    .btn-float, .btn-icon, .btn-link, .btn {
+        font-size: 1.6rem;
+    }
+}
