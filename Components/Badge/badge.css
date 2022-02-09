@@ -1,0 +1,83 @@
+.badge-round-avatar {
+    border-radius: 9999px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 4px;
+    right: 3px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-square-avatar {
+    border-radius: 9999px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: -1px;
+    right: -2px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    width: 18px;
+    height: 18px;
+    padding: 0.3rem;
+    position: absolute;
+    background-color: var(--default-color);
+}
+
+.badge-number {
+    font-size: 1.2rem;
+    color: var(--lynx-white);
+    text-align: center;
+}
+
+.badge-left {
+    top: -13px;
+    left: -15px;
+}
+
+.badge-right {
+    top: -17px;
+    right: -13px;
+}
+
+.badge-xs {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-lg {
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-md {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--white-color);
+}
+
+.badge-sm {
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--white-color);
+}
+
+.badge-busy {
+    background-color: var(--danger-color);
+}
+
+.badge-online {
+    background-color: var(--success-color);
+}
+
+.badge-away {
+    background-color: var(--warning-color);
+}
