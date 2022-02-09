@@ -131,6 +131,26 @@ body {
     background-color: var(--code-bg-color);
 }
 
+.primary-alert-code {
+    color: var(--primary-darker-color);
+}
+
+.success-alert-code {
+    color: var(--success-darker-color);
+}
+
+.info-alert-code {
+    color: var(--default-darker-color);
+}
+
+.warning-alert-code {
+    color: var(--warning-darker-color);
+}
+
+.error-alert-code {
+    color: var(--danger-darker-color);
+}
+
 .comp-box {
     width: 80%;
     border: 5px solid var(--primary-color);

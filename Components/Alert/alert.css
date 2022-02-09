@@ -1,0 +1,89 @@
+.alert {
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+/* ------------------------------------> Simple Alert <---------------------------------------- */
+.alert-primary {
+    background-color: var(--primary-lighter-color);
+    color: var(--primary-darker-color);
+}
+
+.alert-success {
+    background-color: var(--success-lighter-color);
+    color: var(--success-darker-color);
+}
+
+.alert-info {
+    background-color: var(--default-lighter-color);
+    color: var(--default-darker-color);
+}
+
+.alert-warning {
+    background-color: var(--warning-lighter-color);
+    color: var(--warning-darker-color);
+}
+
+.alert-error {
+    background-color: var(--danger-lighter-color);
+    color: var(--danger-darker-color);
+}
+
+/* -------------------------------------> Icon Alert <------------------------------------------- */
+.alert-icon-primary {
+    background-color: var(--primary-lighter-color);
+    color: var(--primary-darker-color);
+}
+
+.alert-icon-success {
+    background-color: var(--success-lighter-color);
+    color: var(--success-darker-color);
+}
+
+.alert-icon-info {
+    background-color: var(--default-lighter-color);
+    color: var(--default-darker-color);
+}
+
+.alert-icon-warning {
+    background-color: var(--warning-lighter-color);
+    color: var(--warning-darker-color);
+}
+
+.alert-icon-error {
+    background-color: var(--danger-lighter-color);
+    color: var(--danger-darker-color);
+}
+
+/* ------------------------------------------> Filled Alert <---------------------------------- */
+.alert-primary-filled {
+    background-color: var(--primary-darker-color);
+    color: var(--lynx-white);
+}
+
+.alert-success-filled {
+    background-color: var(--success-darker-color);
+    color: var(--lynx-white);
+}
+
+.alert-info-filled {
+    background-color: var(--default-darker-color);
+    color: var(--lynx-white);
+}
+
+.alert-warning-filled {
+    background-color: var(--warning-darker-color);
+    color: var(--lynx-white);
+}
+
+.alert-error-filled {
+    background-color: var(--danger-darker-color);
+    color: var(--lynx-white);
+}
+
+/* ---------------------------------------> Responsive CSS <------------------------------------ */
+@media only screen and (max-width: 522px) {
+    .alert {
+        font-size: 1.4rem;
+    }
+}
