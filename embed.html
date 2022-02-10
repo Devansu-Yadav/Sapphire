@@ -153,3 +153,67 @@
         <button class="btn-float btn-secondary rounded-med space-S"><i class="fa-solid fa-floppy-disk"></i></button>
         <button class="btn-float btn-default rounded-med space-S"><i class="fa-solid fa-download"></i></button>
     </div>
+
+<!-- Input Component -->
+    <!-- Input Fields along with Error Styles -->
+    <div class="comp-box rounded-lg flex-col-container">
+        <label class="input-label">Username*</label>
+        <input type="text" class="input-primary space-S"/>
+
+        <label class="input-label">Username*</label>
+        <input type="text" class="input-error space-S"/>
+        <div class="error-text"><span>*This username does not exist</span></div>
+
+        <label class="input-label">Email</label>
+        <input type="text" class="input-disabled space-S" placeholder="This is disabled field" disabled/>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="comp-box rounded-lg centered-flex-row-container">
+        <!-- Using 'radio' class for the outside div, containing input and label -->
+        <div class="radio space-S">
+            <label class="input-label centered-flex-row-container" for="input-radio">
+                <input class="input-radio" name="radio" type="radio" checked>
+                Checked
+            </label>
+        </div>
+
+        <div class="radio space-S">
+            <label class="input-label centered-flex-row-container" for="input-radio">
+                <input class="input-radio" name="radio" type="radio">
+                Unchecked   
+            </label>
+        </div>
+
+        <div class="radio space-S">
+            <label class="input-label centered-flex-row-container" for="input-radio-disabled">
+                <input class="input-radio input-radio-disabled" name="radio" type="radio" disabled>
+                Disabled
+            </label>
+        </div>
+    </div>
+
+    <!-- Checkbox Buttons -->
+    <div class="comp-box rounded-lg centered-flex-row-container">
+        <!-- Using 'checkbox' class for the outside div, containing input and label -->
+        <div class="checkbox space-S">
+            <label class="input-label centered-flex-row-container" for="input-checkbox">
+                <input class="input-checkbox" name="radio" type="checkbox" checked>
+                Checked
+            </label>
+        </div>
+
+        <div class="checkbox space-S">
+            <label class="input-label centered-flex-row-container" for="input-checkbox">
+                <input class="input-checkbox" name="radio" type="checkbox">
+                Unchecked   
+            </label>
+        </div>
+
+        <div class="checkbox space-S">
+            <label class="input-label centered-flex-row-container" for="input-checkbox-disabled">
+                <input class="input-checkbox input-checkbox-disabled" name="radio" type="checkbox" disabled>
+                Disabled
+            </label>
+        </div>
+    </div>
