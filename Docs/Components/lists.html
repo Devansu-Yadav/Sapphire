@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire: Lists</title>
+    <link rel="stylesheet" href="/css/components.css"/>
+    <link rel="stylesheet" href="/css/document.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar centered-flex-row-container shadow-md">
+        <a id="nav-logo" href="/index.html">
+            <img src="/assets/images/Sapphire lib Logo 2.png" class="logo"/>
+        </a>
+        <div class="navigation centered-flex-row-container">
+            <ul class="nav-items centered-flex-row-container">
+                <li class="space-S"><a href="/index.html">Home</a></li>
+                <li class="space-S"><a href="./lists.html">Documentation</a></li>
+            </ul>
+            <i id="nav-menu" class="space-S fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="docs-container space-XXL">
+        <aside class="sidebar">
+            <nav class="sidebar-nav centered-flex-col-container">
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Get Started</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/introduction.html">
+                    <div class="sidebar-item-txt">Introduction</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/colors.html">
+                    <div class="sidebar-item-txt">Colors</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/typography.html">
+                    <div class="sidebar-item-txt">Typography</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/conclusion.html">
+                    <div class="sidebar-item-txt">Conclusion</div>
+                </a>
+
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Components</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./avatar.html">
+                    <div class="sidebar-item-txt">Avatar</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./alert.html">
+                    <div class="sidebar-item-txt">Alert</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./badge.html">
+                    <div class="sidebar-item-txt">Badge</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./button.html">
+                    <div class="sidebar-item-txt">Button</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./card.html">
+                    <div class="sidebar-item-txt">Card</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./image.html">
+                    <div class="sidebar-item-txt">Image</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./input.html">
+                    <div class="sidebar-item-txt">Input</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./text-utilities.html">
+                    <div class="sidebar-item-txt">Text Utilities</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./lists.html">
+                    <div class="sidebar-item-txt link-active">Lists</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./rating.html">
+                    <div class="sidebar-item-txt">Ratings</div>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="component-container space-XL">
+            <section class="comp-intro">
+                <h1 class="heading-1 intro-heading">Lists</h1>
+                <p class="intro-content para-4">
+                    Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+                </p>
+            </section>
+            <br>
+            <br>
+            <br>
+            <hr class="content-divider">
+            <br>
+            <br>
+            <br>
+            
+            <section class="component-section">
+                <!-- Unordered Lists -->
+                <h3 class="heading-3 comp-heading">Unordered Lists</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    The default style of unordered lists is filled circle denoted by the class <span class="class-to-apply-for-comp">.ulist-style-default</span>. Other styles of unordered lists can be used by giving the class names
+                    <span class="class-to-apply-for-comp">.ulist-style-square</span>, <span class="class-to-apply-for-comp">.ulist-style-circle</span>, 
+                    <span class="class-to-apply-for-comp">.ulist-style-none</span> to the <code class="code">&lt;ul&gt;</code> tag. 
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <ul class="ulist-style-default space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ul>
+
+                    <ul class="ulist-style-square space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ul>
+
+                    <ul class="ulist-style-circle space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ul>
+
+                    <ul class="ulist-style-none space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Ordered Lists -->
+                <h3 class="heading-3 comp-heading">Ordered Lists</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    The default style of ordered lists is decimal numbers denoted by the class <span class="class-to-apply-for-comp">.olist-style-default</span>. Other styles of unordered lists can be used by giving the class names 
+                    <span class="class-to-apply-for-comp">.olist-style-alphabets</span>, <span class="class-to-apply-for-comp">.olist-style-roman</span> to the <code>&lt;ol&gt;</code> tag.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <ol class="olist-style-default space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ol>
+
+                    <ol class="olist-style-alphabets space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ol>
+
+                    <ol class="olist-style-roman space-XL">
+                        <li>Item1</li>
+                        <li>Item2</li>
+                        <li>Item3</li>
+                    </ol>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Stacked Lists -->
+                <h3 class="heading-3 comp-heading">Stacked Lists</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Stacked Lists can be used by giving class name as <span class="class-to-apply-for-comp">.stack-list-item</span>
+                    to <code class="code">&lt;li&gt;</code> tag and <span class="class-to-apply-for-comp">.stack-list</span> to the <code class="code">&lt;ul&gt;</code> tag
+                    You can copy the HTML from code snippet below.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <ul class="ulist-style-none stack-list">
+                        <li class="stack-list-item">
+                            <h5 class="heading-4">
+                                20% Off
+                            </h5>
+                            <p>
+                                Order fast to avail the discount! 2 hours left!!
+                            </p>
+                        </li>
+                        <li class="stack-list-item">
+                            <h5 class="heading-4">
+                                20% Off
+                            </h5>
+                            <p>
+                                Order fast to avail the discount! 1 hours left!!
+                            </p>
+                        </li>
+                        <li class="stack-list-item">
+                            <h5 class="heading-4">
+                                20% Off
+                            </h5>
+                            <p>
+                                Order fast to avail the discount! 1 hours left!!
+                            </p>
+                        </li>
+                        <li class="stack-list-item">
+                            <h5 class="heading-4">
+                                20% Off
+                            </h5>
+                            <p>
+                                Order fast to avail the discount! 30 mins left!!
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src="../nav-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* ------------------------------------> Unordered Lists <------------------------------------ */
+.ulist-style-default {
+    list-style: disc;
+}
+
+.ulist-style-square {
+    list-style: square;
+}
+
+.ulist-style-circle {
+    list-style: circle;
+}
+
+.ulist-style-none {
+    list-style: none;
+}
+
+/* -----------------------------------> Ordered List <----------------------------------------- */
+.olist-style-default {
+    list-style: decimal;
+}
+
+.olist-style-alphabets {
+    list-style: lower-alpha;
+}
+
+.olist-style-roman {
+    list-style: lower-roman;
+}
+
+/* ----------------------------------> Stacked Lists <----------------------------------------- */
+.stack-list {
+    width: 20rem;
+}
+
+.stack-list-item {
+    border-bottom: 1px solid var(--gray-color);
+    padding: 0.5rem;
+}
+
+.stack-list-item:last-child {
+    border-bottom: none;
+}
