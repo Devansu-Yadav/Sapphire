@@ -98,7 +98,7 @@ body {
 }
 
 .content-divider {
-    width: 90%;
+    width: 98%;
     margin: 0.3rem 0.5rem 0.3rem 0;
     border-bottom: 1px solid var(--gray-color);
 }
@@ -165,6 +165,12 @@ body {
     font-style: initial;
     font-size: 1.6rem;
     padding: 0.5rem;
+}
+
+.badge {
+    font-size: 2rem;
+    position: relative;
+    background-color: transparent;
 }
 
 /* ---------------------------------------> Responsive CSS <------------------------------------ */

@@ -1,0 +1,116 @@
+.badge-round-avatar {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-square-avatar {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    bottom: 2px;
+    right: -2px;
+    border: 3px solid var(--white-color);
+}
+
+.badge-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.3rem;
+    position: absolute;
+    background-color: var(--primary-darker-color);
+}
+
+.badge-number {
+    font-size: 1.2rem;
+    color: var(--lynx-white);
+    text-align: center;
+}
+
+.badge-left {
+    top: -13px;
+    left: -15px;
+}
+
+.badge-right {
+    top: -17px;
+    right: -13px;
+}
+
+.badge-xs {
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--white-color);
+}
+
+.badge-lg {
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid var(--white-color);
+}
+
+.badge-md {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--white-color);
+}
+
+.badge-sm {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--white-color);
+}
+
+.badge-busy {
+    background-color: var(--danger-color);
+}
+
+.badge-online {
+    background-color: var(--success-color);
+}
+
+.badge-away {
+    background-color: var(--warning-color);
+}
+
+/* -----------------------------------------> Responsive CSS <--------------------------------- */
+@media only screen and (max-width: 522px) {
+    .badge-xs {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .badge-lg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .badge-md {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .badge-sm {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .badge-round-avatar {
+        bottom: 5px;
+        right: 2px;
+    }
+
+    .badge-square-avatar {
+        bottom: 4px;
+        right: -1px;
+    }
+}
