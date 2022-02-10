@@ -1,0 +1,26 @@
+.rating-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-wrapper input {
+    display: none;
+}
+  
+.rating-wrapper label {
+    font-size: 3rem;
+    color: var(--black-color);
+    padding: 1rem;
+    transition: all 0.2 ease;
+}
+
+.rating-wrapper input:not(:checked) ~ label:hover,
+  .rating-wrapper input:not(:checked) ~ label:hover ~ label {
+    color: var(--secondary-color);
+}
+
+input:checked ~ label {
+    color: var(--secondary-color);
+}
