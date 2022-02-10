@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire: Card</title>
+    <link rel="stylesheet" href="/css/components.css"/>
+    <link rel="stylesheet" href="/css/document.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav class="navbar centered-flex-row-container shadow-md">
+        <a id="nav-logo" href="/index.html">
+            <img src="/assets/images/Sapphire lib Logo 2.png" class="logo"/>
+        </a>
+        <div class="navigation centered-flex-row-container">
+            <ul class="nav-items centered-flex-row-container">
+                <li class="space-S"><a href="/index.html">Home</a></li>
+                <li class="space-S"><a href="./card.html">Documentation</a></li>
+            </ul>
+            <i id="nav-menu" class="space-S fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="docs-container space-XXL">
+        <aside class="sidebar">
+            <nav class="sidebar-nav centered-flex-col-container">
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Get Started</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/introduction.html">
+                    <div class="sidebar-item-txt">Introduction</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/colors.html">
+                    <div class="sidebar-item-txt">Colors</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/typography.html">
+                    <div class="sidebar-item-txt">Typography</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/conclusion.html">
+                    <div class="sidebar-item-txt">Conclusion</div>
+                </a>
+
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Components</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./avatar.html">
+                    <div class="sidebar-item-txt">Avatar</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./alert.html">
+                    <div class="sidebar-item-txt">Alert</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./badge.html">
+                    <div class="sidebar-item-txt">Badge</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./button.html">
+                    <div class="sidebar-item-txt">Button</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./card.html">
+                    <div class="sidebar-item-txt link-active">Card</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./image.html">
+                    <div class="sidebar-item-txt">Image</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./input.html">
+                    <div class="sidebar-item-txt">Input</div>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="component-container space-XL">
+            <section class="comp-intro">
+                <h1 class="heading-1 intro-heading">Cards</h1>
+                <p class="intro-content para-4">
+                    Cards are surfaces that display content and actions on a single topic.
+                    They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+                </p>
+            </section>
+            <br>
+            <br>
+            <br>
+            <hr class="content-divider">
+            <br>
+            <br>
+            <br>
+            
+            <section class="component-section">
+                <!-- Text Only Cards -->
+                <h3 class="heading-3 comp-heading">Text Only Cards</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Text Only Card is one that contains a title, a descriptive text. To use the Card Component,
+                    add <span class="class-to-apply-for-comp">.card-title</span> and <span class="class-to-apply-for-comp">.card-text</span>
+                    inside a <code class="code">&lt;div&gt;</code> with class <span class="class-to-apply-for-comp">.card-text-only</span>
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <div class="card card-text-only">
+                        <div class="card-header">Blue Watch</div>
+                        <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Card With Badges & Shadow -->
+                <h3 class="heading-3 comp-heading">Card With Badges & Shadow</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Use the <span class="class-to-apply-for-comp">.card-badge</span> class along with <span class="class-to-apply-for-comp">.card</span> to create Cards with a badge.
+                    You can also add the <span class="class-to-apply-for-comp">.card-title</span>, <span class="class-to-apply-for-comp">.card-header</span>, <span class="class-to-apply-for-comp">.card-img</span>, <span class="class-to-apply-for-comp">.card-text</span>, 
+                    <span class="class-to-apply-for-comp">.card-buttons</span>, <span class="class-to-apply-for-comp">.card-button</span> and <span class="class-to-apply-for-comp">.card-icon</span> classes to add more details to your card.
+                    <br>
+                    To make a Card with a Shadow, use the <span class="class-to-apply-for-comp">.card-with-shadow</span> class on your card.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <div class="card space-S">
+                        <span class="card-badge">25% OFF</span>
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-1.jpeg" alt="blue-watch"/>
+                        </div>
+                        <div class="card-header">Blue Watch</div>
+                        <div class="card-title">by Rolex</div>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                            <i class="card-icon material-icons material-icons-outlined">shopping_cart</i>
+                        </div>
+                    </div>
+
+                    <div class="card card-with-shadow space-S">
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-2.jpeg" alt="blue-watch"/>
+                        </div>
+                        <div class="card-header">Blue Watch</div>
+                        <div class="card-title">by Analogue</div>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Cards with Dismiss and Text Overlay -->
+                <h3 class="heading-3 comp-heading">Cards with Dismiss & Text Overlay</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    You can create cards with a Text overlay using the <span class="class-to-apply-for-comp">.card-text-overlay</span> class.
+                    The dismiss feature can be achieved by adding the class <span class="class-to-apply-for-comp">.btn-close</span>. You can refer the code snippet below.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <div class="card card-text-overlay space-S">
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-1.jpeg" alt="blue-watch"/>
+                            <div class="card-header">Out of Stock</div>
+                        </div>
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                            <i class="card-icon material-icons material-icons-outlined">shopping_cart</i>
+                        </div>
+                    </div>
+
+                    <div class="card space-S">
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-1.jpeg" alt="blue-watch"/>
+                        </div>
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        <div class="card-header">Blue Watch</div>
+                        <div class="card-title">by Rolex</div>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                            <i class="card-icon material-icons material-icons-outlined">shopping_cart</i>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <h3 class="heading-3 comp-heading">Vertical and Horizontal Cards</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    You can create Vertical cards using the original <span class="class-to-apply-for-comp">.card</span> class and also create
+                    Horizontal cards using the <span class="class-to-apply-for-comp">.card-horizontal</span> class.
+                    You can refer the code snippet below.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <div class="card space-S">
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-1.jpeg" alt="blue-watch"/>
+                        </div>
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        <div class="card-header">Blue Watch</div>
+                        <div class="card-title">by Rolex</div>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                            <i class="card-icon material-icons material-icons-outlined">shopping_cart</i>
+                        </div>
+                    </div>
+
+                    <div class="card card-horizontal space-S">
+                        <div class="card-img">
+                            <img src="/assets/images/card-img-1.jpeg" alt="blue-watch"/>
+                            <div class="flex-col-container">
+                                <div class="card-header">Blue Watch</div>
+                                <div class="card-title">by Rolex</div>
+                            </div>
+                        </div>
+
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio
+                        </p>
+
+                        <div class="card-buttons">
+                            <button class="card-button">ADD TO CART</button>
+                            <i class="card-icon material-icons material-icons-outlined">favorite_border</i>
+                            <i class="card-icon material-icons material-icons-outlined">shopping_cart</i>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src="../nav-menu.js"></script>
+    <script src="/Components/Card/dissmissible-card.js"></script>
+</body>
+</html>
