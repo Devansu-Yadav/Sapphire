@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire: Buttons</title>
+    <link rel="stylesheet" href="/css/components.css"/>
+    <link rel="stylesheet" href="/css/document.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar centered-flex-row-container shadow-md">
+        <a id="nav-logo" href="/index.html">
+            <img src="/assets/images/Sapphire lib Logo 2.png" class="logo"/>
+        </a>
+        <div class="navigation centered-flex-row-container">
+            <ul class="nav-items centered-flex-row-container">
+                <li class="space-S"><a href="/index.html">Home</a></li>
+                <li class="space-S"><a href="./buttons.html">Documentation</a></li>
+            </ul>
+            <i id="nav-menu" class="space-S fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="docs-container space-XXL">
+        <aside class="sidebar">
+            <nav class="sidebar-nav centered-flex-col-container">
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Get Started</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/introduction.html">
+                    <div class="sidebar-item-txt">Introduction</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/colors.html">
+                    <div class="sidebar-item-txt">Colors</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/typography.html">
+                    <div class="sidebar-item-txt">Typography</div>
+                </a>
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="/Docs/Get-Started/conclusion.html">
+                    <div class="sidebar-item-txt">Conclusion</div>
+                </a>
+
+                <div class="sidebar-heading">
+                    <h2 class="heading-2">Components</h2>
+                </div>
+                <hr class="divide-nav-items"/>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./avatar.html">
+                    <div class="sidebar-item-txt">Avatar</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./alert.html">
+                    <div class="sidebar-item-txt">Alert</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./badge.html">
+                    <div class="sidebar-item-txt">Badge</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./button.html">
+                    <div class="sidebar-item-txt link-active">Button</div>
+                </a>
+    
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./card.html">
+                    <div class="sidebar-item-txt">Card</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./image.html">
+                    <div class="sidebar-item-txt">Image</div>
+                </a>
+
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./input.html">
+                    <div class="sidebar-item-txt">Input</div>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="component-container space-XL">
+            <section class="comp-intro">
+                <h1 class="heading-1 intro-heading">Button</h1>
+                <p class="intro-content para-4">
+                    Buttons are useful in performing various actions on a single click. Different variants of buttons are present in Sapphire UI.
+                </p>
+            </section>
+            <br>
+            <br>
+            <br>
+            <hr class="content-divider">
+            <br>
+            <br>
+            <br>
+            
+            <section class="component-section">
+                <!-- Primary Buttons -->
+                <h3 class="heading-3 comp-heading">Primary Buttons</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    The default buttons are available in different variants. The <span class="class-to-apply-for-comp">.btn</span> class needs to be added on the <code class="code">&lt;button&gt;</code> tag.
+                    According to your requirement, you can add classes like <span class="class-to-apply-for-comp">.btn-primary</span>, <span class="class-to-apply-for-comp">.btn-secondary</span>, <span class="class-to-apply-for-comp">.btn-default</span>,
+                    <span class="class-to-apply-for-comp">.btn-success</span>, <span class="class-to-apply-for-comp">.btn-error</span> and <span class="class-to-apply-for-comp">.btn-disable</span>.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <button class="btn btn-primary rounded-med space-S">Primary</button>
+                    <button class="btn btn-secondary rounded-med space-S">Secondary</button>
+                    <button class="btn btn-default rounded-med space-S">Default</button>
+                    <button class="btn btn-success rounded-med space-S">Success</button>
+                    <button class="btn btn-error rounded-med space-S">Error</button>
+                    <button class="btn btn-disable rounded-med space-S" disabled>Disable</button>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L118-L123&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+                
+                <!-- Outline Buttons -->
+                <h3 class="heading-3 comp-heading">Outline Buttons</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    For outline buttons, classes like <span class="class-to-apply-for-comp">.btn-outline-primary</span>, <span class="class-to-apply-for-comp">.btn-outline-secondary</span>, <span class="class-to-apply-for-comp">.btn-outline-default</span>,
+                    <span class="class-to-apply-for-comp">.btn-outline-success</span>, <span class="class-to-apply-for-comp">.btn-outline-error</span> and <span class="class-to-apply-for-comp">.btn-outline-disable</span> can be added.
+                </p>
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <button class="btn btn-outline-primary rounded-med space-S">Primary</button>
+                    <button class="btn btn-outline-secondary rounded-med space-S">Secondary</button>
+                    <button class="btn btn-outline-default rounded-med space-S">Default</button>
+                    <button class="btn btn-outline-success rounded-med space-S">Success</button>
+                    <button class="btn btn-outline-error rounded-med space-S">Error</button>
+                    <button class="btn btn-outline-disable rounded-med space-S" disabled>Disable</button>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L128-L133&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Link Buttons -->
+                <h3 class="heading-3 comp-heading">Link Buttons</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    Want to attach a link action, at a button tap? Use the Link Button by adding the <span class="class-to-apply-for-comp">.btn-link</span> class.
+                    There are 3 variations <code class="code primary-alert-code">primary</code>, <code class="code success-alert-code">secondary</code> and <code class="code default-alert-code">default</code>.
+                    For primary, use the <span class="class-to-apply-for-comp">.btn-link-primary</span>.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <button class="btn-link btn-link-primary space-S">Primary</button>
+                    <button class="btn-link btn-link-secondary space-S">Secondary</button>
+                    <button class="btn-link btn-link-default space-S">Default</button>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L138-L140&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Icon Button -->
+                <h3 class="heading-3 comp-heading">Icon Button</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    The class <span class="class-to-apply-for-comp">.btn-icon</span> needs to be added along with other classes.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <button class="btn-icon btn-icon-primary rounded-med space-S"><i class="fa-solid fa-cart-shopping"></i>Primary</button>
+                    <button class="btn-icon btn-icon-secondary rounded-med space-S"><i class="fa-solid fa-floppy-disk"></i>Secondary</button>
+                    <button class="btn-icon btn-icon-default rounded-med space-S"><i class="fa-solid fa-download"></i>Default</button>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L145-L147&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <!-- Floating Action Button -->
+                <h3 class="heading-3 comp-heading">Floating Action Buttons</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    These buttons can be used by providing the class name as <span class="class-to-apply-for-comp">.btn-float</span>.
+                </p>
+
+                <div class="comp-box rounded-lg centered-flex-row-container">
+                    <button class="btn-float btn-primary rounded-med space-S"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="btn-float btn-secondary rounded-med space-S"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button class="btn-float btn-default rounded-med space-S"><i class="fa-solid fa-download"></i></button>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L152-L154&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src="../nav-menu.js"></script>
+</body>
+</html>
