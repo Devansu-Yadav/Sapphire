@@ -1,23 +1,23 @@
-.rating-wrapper {
+.star-rating {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
 }
 
-.rating-wrapper input {
+.star-rating input {
     display: none;
 }
   
-.rating-wrapper label {
+.star-rating label {
     font-size: 3rem;
     color: var(--black-color);
     padding: 1rem;
     transition: all 0.2 ease;
 }
 
-.rating-wrapper input:not(:checked) ~ label:hover,
-  .rating-wrapper input:not(:checked) ~ label:hover ~ label {
+.star-rating input:not(:checked) ~ label:hover,
+  .star-rating input:not(:checked) ~ label:hover ~ label {
     color: var(--secondary-color);
 }
 
