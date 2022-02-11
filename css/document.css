@@ -191,6 +191,52 @@ body {
 .error-text {
     color: var(--danger-color);
 }
+/* ---------------------------------------> Color Palette <------------------------------------ */
+.color-palette {
+    width: 85%;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.color-palette div {
+    width: 11rem;
+    height: 11rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.default {
+    background-color: var(--default-color);
+    color: var(--white-color);
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--content-text-color);
+}
+
+.error {
+    background-color: var(--danger-color);
+    color: var(--white-color);
+}
+
+.success {
+    background-color: var(--success-color);
+    color: var(--white-color);
+}
+
+.warning {
+    background-color: var(--warning-color);
+    color: var(--white-color);
+}
 
 .comp-box ul, .comp-box ol {
     font-size: 1.6rem;
@@ -253,7 +299,7 @@ body {
         padding: 0;
     }
 
-    .comp-box {
+    .comp-box, .color-palette {
         width: 300px;
     }
 }
