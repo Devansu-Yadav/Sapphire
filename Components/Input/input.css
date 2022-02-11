@@ -1,0 +1,40 @@
+/* --------------------------------> Form Input Fields <--------------------------------------- */
+.input-primary, .input-error, .input-disabled {
+    font-size: 1.6rem;
+    border: 1px solid var(--black-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 35%;
+    outline: none;
+}
+
+.input-error {
+    border: 1px solid var(--danger-color);
+}
+
+.input-disabled {
+    cursor: not-allowed;
+    border: 2px solid var(--gray-color);
+    background-color: var(--code-bg-color);
+}
+
+.input-primary:focus, .input-error:focus {
+    border: 1px solid var(--primary-color);
+}
+
+/* ---------------------------------------> Radio Button <----------------------------------- */
+.input-radio, .input-checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.input-radio-disabled, .input-checkbox-disabled {
+    cursor: not-allowed;
+}
+
+/* ------------------------------> Responsive CSS <-------------------------------------------- */
+@media only screen and (max-width: 522px) {
+    .input-primary, .input-error, .input-disabled {
+        width: 50%;
+    }
+}
