@@ -99,3 +99,8 @@
 .link-active {
     color: var(--primary-color);
 }
+
+/* ---------------------------------------> Divs <--------------------------------------------- */
+.display-none {
+    display: none;
+}
