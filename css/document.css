@@ -191,6 +191,16 @@ body {
 .error-text {
     color: var(--danger-color);
 }
+
+.contribute-PRs {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.contribute-PRs:hover {
+    filter: brightness(90%);
+}
+
 /* ---------------------------------------> Color Palette <------------------------------------ */
 .color-palette {
     width: 85%;
