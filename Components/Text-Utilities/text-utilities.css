@@ -1,0 +1,103 @@
+/* ---------------------------------> Headings <------------------------------------------- */
+.heading1 {
+    font-size: 4rem;
+}
+
+.heading2 {
+    font-size: 3.2rem;
+}
+
+.heading3 {
+    font-size: 2.4rem;
+}
+
+.heading4 {
+    font-size: 1.6rem;
+}
+
+.heading5 {
+    font-size: 0.8rem;
+}
+
+/* ---------------------------------> Text Sizes <----------------------------------------- */
+.lg-txt {
+    font-size: 4rem;
+    color: var(--content-text-color);
+}
+
+.md-txt {
+    font-size: 3.2rem;
+    color: var(--content-text-color);
+}
+
+.rg-txt {
+    font-size: 2.4rem;
+    color: var(--content-text-color);
+}
+
+.sm-txt {
+    font-size: 1.6rem;
+    color: var(--content-text-color);
+}
+
+/* --------------------------------------> Text Weights <--------------------------------------- */
+.bolder-txt {
+    font-weight: 900;
+}
+
+.bold-txt {
+    font-weight: 700;
+}
+
+.regular-txt {
+    font-weight: 500;
+}
+
+.light-txt {
+    font-weight: 300;
+}
+
+/* -------------------------------------> Text Decoration <-------------------------------------- */
+.gray-txt {
+    color: var(--gray-color);
+}
+
+.underline-txt {
+    text-decoration: underline;
+}
+
+.strikethrough-txt {
+    text-decoration: line-through;
+}
+
+/* ----------------------------------> Text Alignment <----------------------------------------- */
+.left-txt {
+    text-align: left;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+.right-txt {
+    text-align: right;
+}
+
+/* -----------------------------------> Responsive CSS <---------------------------------------- */
+@media only screen and (max-width: 522px) {
+    .lg-txt {
+        font-size: 3.2rem;
+    }
+
+    .md-txt {
+        font-size: 2.4rem;
+    }
+
+    .rg-txt {
+        font-size: 1.6rem;
+    }
+
+    .sm-txt {
+        font-size: 0.8rem;
+    }
+}
