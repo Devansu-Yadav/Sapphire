@@ -1,0 +1,26 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.star-rating input {
+    display: none;
+}
+  
+.star-rating label {
+    font-size: 3rem;
+    color: var(--black-color);
+    padding: 1rem;
+    transition: all 0.2 ease;
+}
+
+.star-rating input:not(:checked) ~ label:hover,
+  .star-rating input:not(:checked) ~ label:hover ~ label {
+    color: var(--secondary-color);
+}
+
+input:checked ~ label {
+    color: var(--secondary-color);
+}
