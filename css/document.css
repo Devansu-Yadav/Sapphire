@@ -23,7 +23,7 @@ body {
     margin: auto;
     background-color: var(--primary-color);
     background-size: 100%;
-    background: linear-gradient(45deg, rgba(28,60,115,1) 25%, rgba(0,143,245,1) 57%, rgba(151,205,242,1) 83%);
+    background: linear-gradient(135deg, rgba(28,60,115,1) 25%, rgba(0,143,245,1) 57%, rgba(151,205,242,1) 83%);
     background-repeat: no-repeat;
     background-clip: text;
     -webkit-background-clip: text;
@@ -42,10 +42,25 @@ body {
 
 .hero-btns {
     display: flex;
-    margin: auto;
+    margin: 1rem auto auto;
     justify-content: space-evenly;
-    width: 30rem;
+    width: 35rem;
+    column-gap: 1rem;
 }
+
+.hero-btns .btn {
+    filter: none;
+    box-shadow: 0px 5px 6px var(--gray-color);
+}
+
+.hero-btns .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+.hero-btns .btn-outline-default:hover {
+    border-color: var(--default-lighter-color);
+    background-color: var(--default-lighter-color);
+} 
 
 /* ------------------------------------> NavBar <------------------------------------------ */
 .navbar {
@@ -85,6 +100,17 @@ body {
 
 .nav-items li:hover:after {
     transform: scaleX(0.75);
+}
+
+/* ----------------------------------------> Scrollbar <------------------------------------------ */
+::-webkit-scrollbar {
+    height: 2px;
+    width: 3px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 0.625rem;
 }
 
 /* ----------------------------------------> Document Container & Sidebar <-------------------------------  */
@@ -246,6 +272,47 @@ body {
     filter: brightness(90%);
 }
 
+/* ---------------------------------------> Footer <------------------------------------------- */
+.footer-container {
+    background-color: var(--default-color);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-header {
+    color: var(--lynx-white);
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.footer-header span {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    column-gap: 2rem;
+    padding: 1rem;
+}
+
+.footer-social-item {
+    display: inline-block;
+}
+
+.footer-icon {
+    color: var(--lynx-white);
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.copyright {
+    font-size: 1.6rem;
+    color: var(--lynx-white);
+}
+
+.footer-icon:hover {
+    color: var(--primary-color);
+}
+
 /* ---------------------------------------> Color Palette <------------------------------------ */
 .color-palette {
     width: 85%;
@@ -298,6 +365,19 @@ body {
 }
 
 /* ---------------------------------------> Responsive CSS <------------------------------------ */
+/*  Responsive CSS for Landing page  */
+@media only screen and (max-width: 800px) {
+    .hero-heading {
+        font-size: 4rem;
+    }
+
+    .hero-subheading {
+        font-size: 2rem;
+        width: 95%;
+    }
+}
+
+
 @media only screen and (max-width: 700px) {
     .component-container {
         width: 100%;
@@ -329,6 +409,23 @@ body {
     } 
 }
 
+/*  Responsive CSS for Landing page  */
+@media only screen and (max-width: 578px) { 
+    .hero-section {
+        padding-top: 7rem;
+    }
+
+    .hero-heading {
+        width: 95%;
+        font-size: 3rem;
+    }
+
+    .hero-subheading {
+        font-size: 2rem;
+        width: 95%;
+    }
+}
+
 @media only screen and (max-width: 522px) {
     .docs-container {
         min-width: 330px;
@@ -356,5 +453,13 @@ body {
 
     .comp-box, .color-palette {
         width: 300px;
+    }
+
+    .footer-header {
+        font-size: 1.8rem;
+    }
+
+    .footer-icon {
+        font-size: 2rem;
     }
 }
