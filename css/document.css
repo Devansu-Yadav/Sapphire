@@ -10,7 +10,7 @@ body {
 }
 
 .hero-section {
-    padding-top: 10rem;
+    padding-top: 7rem;
     text-align: center;
 }
 
@@ -46,6 +46,10 @@ body {
     justify-content: space-evenly;
     width: 35rem;
     column-gap: 1rem;
+}
+
+.home-page-bg #nav-menu {
+    display: none;
 }
 
 .hero-btns .btn {
@@ -408,7 +412,7 @@ body {
 
     .sidebar-item {
         width: 95%;
-    } 
+    }
 }
 
 /*  Responsive CSS for Landing page  */
