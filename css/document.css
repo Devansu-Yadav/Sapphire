@@ -2,6 +2,51 @@ body {
     background-color: var(--white-color);
 }
 
+/* CSS for Home page */
+.home-page-bg {
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+.hero-section {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 5.5rem;
+    font-weight: 900;
+    width: 80%;
+    max-width: 75rem;
+    text-align: center;
+    margin: auto;
+    background-color: var(--primary-color);
+    background-size: 100%;
+    background: linear-gradient(45deg, rgba(28,60,115,1) 25%, rgba(0,143,245,1) 57%, rgba(151,205,242,1) 83%);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subheading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    color: var(--accent-color);
+    padding: 3rem 0 1.5rem;
+}
+
+.hero-btns {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 30rem;
+}
+
 /* ------------------------------------> NavBar <------------------------------------------ */
 .navbar {
     justify-content: space-between;
