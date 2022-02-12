@@ -392,11 +392,13 @@ body {
 
     .sidebar {
         display: none;
+        overflow-x: hidden;
         overflow-y: scroll;
         position: absolute;
         top: 89px;
         left: 0;
         z-index: 1;
+        height: 117vh;
         width: 100%;
     }
 
