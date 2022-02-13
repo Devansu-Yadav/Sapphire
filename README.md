@@ -27,4 +27,4 @@ To use Sapphire in your projects, just copy the below code snippet and paste it 
 [Sapphire](https://sapphire-ui.netlify.app/)
 
 ## Demo
-
+![Demo](https://github.com/Devansu-Yadav/Sapphire/blob/embedBranch/assets/comp-lib-demo.gif)
