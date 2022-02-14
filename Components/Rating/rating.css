@@ -21,6 +21,6 @@
     color: var(--secondary-color);
 }
 
-input:checked ~ label {
+.star-rating input:checked ~ label {
     color: var(--secondary-color);
 }
