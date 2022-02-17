@@ -1,0 +1,47 @@
+/* -------------------------------------> Simple Navigation <---------------------------------- */
+.nav-simple-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--default-color);
+}
+
+.nav-simple-brand {
+    margin-left: 1.5rem;
+    font-size: 2.2rem;
+    color: var(--white-color);
+}
+
+.nav-simple-container .nav-hamburger-menu {
+    display: none;
+}
+
+.nav-simple-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-simple-item {
+    font-size: 1.8rem;
+    list-style-type: none;
+    color: var(--white-color);
+    padding: 1rem;
+}
+
+.nav-simple-item a {
+    color: var(--white-color);
+}
+
+/* ----------------------------------------> Responsive CSS <-------------------------------- */
+@media only screen and (max-width: 1012px) {
+    .nav-simple-item {
+        display: none;
+    }
+
+    .nav-simple-container .nav-hamburger-menu {
+        display: block;
+        color: var(--white-color);
+    }
+}
