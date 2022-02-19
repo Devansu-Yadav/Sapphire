@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire: Rating</title>
+    <title>Sapphire: Navigation</title>
     <link rel="stylesheet" href="/css/components.css"/>
     <link rel="stylesheet" href="/css/document.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,7 +18,7 @@
         <div class="navigation centered-flex-row-container">
             <ul class="nav-items centered-flex-row-container">
                 <li class="space-S"><a href="/index.html">Home</a></li>
-                <li class="space-S"><a href="./rating.html">Documentation</a></li>
+                <li class="space-S"><a href="./navigation.html">Documentation</a></li>
             </ul>
             <i id="nav-menu" class="space-S fas fa-bars"></i>
         </div>
@@ -87,22 +87,20 @@
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./rating.html">
-                    <div class="sidebar-item-txt link-active">Ratings</div>
+                    <div class="sidebar-item-txt">Ratings</div>
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./navigation.html">
-                    <div class="sidebar-item-txt">Navigation</div>
+                    <div class="sidebar-item-txt link-active">Navigation</div>
                 </a>
             </nav>
         </aside>
 
         <main class="component-container space-XL">
             <section class="comp-intro">
-                <h1 class="heading-1 intro-heading">Rating</h1>
+                <h1 class="heading-1 intro-heading">Navigation</h1>
                 <p class="intro-content para-4">
-                    Ratings provides insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.
-                    Star Rating is highly use in e-commerce website because they increase social proof and influence purchases, thats why we are providing you star rating 
-                    here and you can just copy the below code and you are good to go.
+                    Navigation bar is helpful for switching between two pages of a website/ web App.
                 </p>
             </section>
             <br>
@@ -114,30 +112,36 @@
             <br>
             
             <section class="component-section">
-                <!-- Rating -->
-                <h3 class="heading-3 comp-heading">Dynamic Rating</h3>
+                <!-- Simple Navigation -->
+                <h3 class="heading-3 comp-heading">Simple Navigation</h3>
                 <br>
                 <br>
+                <p class="comp-description para-4">
+                    Simple Navigation can be used by giving the class name <span class="class-to-apply-for-comp">.nav-simple-container</span>. 
+                    Additional classes like <span class="class-to-apply-for-comp">.nav-simple-brand</span>, <span class="class-to-apply-for-comp">.nav-simple-item</span>, <span class="class-to-apply-for-comp">.nav-hamburger-menu</span> can be added inside 
+                    the container. The destination page url can be given in <code class="code">href</code> of <code class="code">&lt;a&gt;</code> tag.
+                </p>
 
-                <div class="comp-box rounded-lg centered-flex-row-container">
-                    <div class="star-rating">
-                        <input type="radio" name="rate" id="star-5"> 
-                        <label class="fas fa-star star" for="star-5"></label>
-                        <input type="radio" name="rate" id="star-4"> 
-                        <label class="fas fa-star star" for="star-4"></label>
-                        <input type="radio" name="rate" id="star-3"> 
-                        <label class="fas fa-star star" for="star-3"></label>
-                        <input type="radio" name="rate" id="star-2"> 
-                        <label class="fas fa-star star" for="star-2"></label>
-                        <input type="radio" name="rate" id="star-1"> 
-                        <label class="fas fa-star star" for="star-1"></label>
-                    </div>                                                                                                                                                            
+                <div class="comp-box rounded-lg flex-col-container">
+                    <nav class="nav-simple-container space-S rounded-med">
+                        <a class="nav-simple-brand" href="#">
+                            My Brand
+                        </a>
+
+                        <ul>
+                            <li class="nav-simple-item space-S"><a href="#">Home</a></li>
+                            <li class="nav-simple-item space-S"><a href="#">Products</a></li>
+                            <li class="nav-simple-item space-S"><a href="#">Blog</a></li>
+                            <li class="nav-simple-item space-S"><a href="#">About Us</a></li>
+                            <i class="nav-hamburger-menu space-S fas fa-bars"></i>
+                        </ul>
+                    </nav>
                 </div>
                 <br>
                 <br>
 
                 <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L502-L513&style=github&showBorder=on&showCopy=on"></script>
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L537-L549&style=github&showBorder=on&showCopy=on"></script>
                 </div>
             </section>
         </main>
