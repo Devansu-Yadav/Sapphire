@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire: Rating</title>
+    <title>Sapphire: SnackBar</title>
     <link rel="stylesheet" href="/css/components.css"/>
     <link rel="stylesheet" href="/css/document.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,7 +18,7 @@
         <div class="navigation centered-flex-row-container">
             <ul class="nav-items centered-flex-row-container">
                 <li class="space-S"><a href="/index.html">Home</a></li>
-                <li class="space-S"><a href="./rating.html">Documentation</a></li>
+                <li class="space-S"><a href="./snackbar.html">Documentation</a></li>
             </ul>
             <i id="nav-menu" class="space-S fas fa-bars"></i>
         </div>
@@ -87,26 +87,25 @@
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./rating.html">
-                    <div class="sidebar-item-txt link-active">Ratings</div>
+                    <div class="sidebar-item-txt">Ratings</div>
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./navigation.html">
                     <div class="sidebar-item-txt">Navigation</div>
                 </a>
-                
+
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./snackbar.html">
-                    <div class="sidebar-item-txt">SnackBar</div>
+                    <div class="sidebar-item-txt link-active">SnackBar</div>
                 </a>
             </nav>
         </aside>
 
         <main class="component-container space-XL">
             <section class="comp-intro">
-                <h1 class="heading-1 intro-heading">Rating</h1>
+                <h1 class="heading-1 intro-heading">SnackBar</h1>
                 <p class="intro-content para-4">
-                    Ratings provides insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.
-                    Star Rating is highly use in e-commerce website because they increase social proof and influence purchases, thats why we are providing you star rating 
-                    here and you can just copy the below code and you are good to go.
+                    Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, or icons.
+                    They provide brief messages about app processes at the bottom of the screen.
                 </p>
             </section>
             <br>
@@ -118,30 +117,59 @@
             <br>
             
             <section class="component-section">
-                <!-- Rating -->
-                <h3 class="heading-3 comp-heading">Dynamic Rating</h3>
+                <!-- Simple Alert -->
+                <h3 class="heading-3 comp-heading">SnackBar Types</h3>
                 <br>
                 <br>
+                <p class="comp-description para-4">
+                    SnackBars are available in 3 variants, <code class="code primary-alert-code">baseline snackbar</code>,
+                    <code class="code primary-alert-code">leading snackbar</code>, and <code class="code primary-alert-code">stacked snackbar</code>.
+                    To use this snackbar in your code, just include classname <span class="class-to-apply-for-comp">.snackbar</span>. 
+                    And also as per the requirement you can also add the following classnames <span class="class-to-apply-for-comp">.snackbar-baseline</span>,
+                    <span class="class-to-apply-for-comp">.snackbar-leading</span>, <span class="class-to-apply-for-comp">.snackbar-stacked</span> and <span class="class-to-apply-for-comp">.snackbar-stacked-btns</span>. 
+                    You can copy the HTML code from below code snippet. Below is the Live Demo. The snackbar will disappear after 3 seconds. Before that, you can close it by using the close button. 
+                    Also, refer the Javascript code for any customization.
+                </p>
 
-                <div class="comp-box rounded-lg centered-flex-row-container">
-                    <div class="star-rating">
-                        <input type="radio" name="rate" id="star-5"> 
-                        <label class="fas fa-star star" for="star-5"></label>
-                        <input type="radio" name="rate" id="star-4"> 
-                        <label class="fas fa-star star" for="star-4"></label>
-                        <input type="radio" name="rate" id="star-3"> 
-                        <label class="fas fa-star star" for="star-3"></label>
-                        <input type="radio" name="rate" id="star-2"> 
-                        <label class="fas fa-star star" for="star-2"></label>
-                        <input type="radio" name="rate" id="star-1"> 
-                        <label class="fas fa-star star" for="star-1"></label>
-                    </div>                                                                                                                                                            
+                <div class="comp-box rounded-lg flex-col-container">
+                    <div class="centered-flex-col-container">
+                        <button class="btn btn-primary baseline-btn rounded-med space-S">Baseline</button>
+                        <button class="btn btn-primary leading-btn rounded-med space-S">Leading</button>
+                        <button class="btn btn-primary stacked-btn rounded-med space-S">Stacked</button>
+                    </div>
+
+                    <!-- Baseline Snackbar comp -->
+                    <div class="snackbar snackbar-baseline centered-flex-row-container">
+                        <p>Can't send photo. Retry in 5 seconds.</p>
+                        <button class="btn btn-outline-primary rounded-med space-S">RETRY</button>
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                    </div>
+
+                    <!-- Snackbar Leading -->
+                    <div class="snackbar snackbar-leading centered-flex-row-container">
+                        <p>Your photo has been archived.</p>
+                        <button class="btn btn-outline-primary rounded-med space-S">UNDO</button>
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                    </div>
+
+                    <!-- Snackbar Stacked -->
+                    <div class="snackbar snackbar-stacked centered-flex-col-container">
+                        <p>This item already has the label "travel". You can add a new label.</p>
+                        <div class="snackbar-stacked-btns centered-flex-row-container">
+                            <button class="btn btn-outline-primary rounded-med space-S">ADD A NEW LABEL</button>
+                            <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <br>
 
                 <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L502-L513&style=github&showBorder=on&showCopy=on"></script>
+                    HTML
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L553-L574&style=github&showBorder=on&showCopy=on"></script>
+                    <br>
+                    JavaScript
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.js%23L2-L31&style=github&showBorder=on&showCopy=on"></script>
                 </div>
             </section>
         </main>
@@ -174,5 +202,6 @@
             </p>
     </footer>
     <script src="../nav-menu.js"></script>
+    <script src="/Components/SnackBar/snackbar.js"></script>
 </body>
 </html>

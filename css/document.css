@@ -276,6 +276,12 @@ body {
     filter: brightness(90%);
 }
 
+/* ---------------------------------------> SnackBar <---------------------------------------- */
+.snackbar {
+    display: none;
+    z-index: 1;
+}
+
 /* ---------------------------------------> Footer <------------------------------------------- */
 .footer-container {
     background-color: var(--default-color);
