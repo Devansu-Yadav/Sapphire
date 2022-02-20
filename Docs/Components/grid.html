@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire: Navigation</title>
+    <title>Sapphire: Grid</title>
     <link rel="stylesheet" href="/css/components.css"/>
     <link rel="stylesheet" href="/css/document.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,7 +18,7 @@
         <div class="navigation centered-flex-row-container">
             <ul class="nav-items centered-flex-row-container">
                 <li class="space-S"><a href="/index.html">Home</a></li>
-                <li class="space-S"><a href="./navigation.html">Documentation</a></li>
+                <li class="space-S"><a href="./grid.html">Documentation</a></li>
             </ul>
             <i id="nav-menu" class="space-S fas fa-bars"></i>
         </div>
@@ -91,24 +91,26 @@
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./navigation.html">
-                    <div class="sidebar-item-txt link-active">Navigation</div>
+                    <div class="sidebar-item-txt">Navigation</div>
                 </a>
-
+                
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./snackbar.html">
-                    <div class="sidebar-item-txt link-active">SnackBar</div>
+                    <div class="sidebar-item-txt">SnackBar</div>
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./grid.html">
-                    <div class="sidebar-item-txt">Grid</div>
+                    <div class="sidebar-item-txt link-active">Grid</div>
                 </a>
             </nav>
         </aside>
 
         <main class="component-container space-XL">
             <section class="comp-intro">
-                <h1 class="heading-1 intro-heading">Navigation</h1>
+                <h1 class="heading-1 intro-heading">Grid</h1>
                 <p class="intro-content para-4">
-                    Navigation bar is helpful for switching between two pages of a website/ web App.
+                    Grids are used to guide the designers how to position elements/containers on the webpage.
+                    Sapphire's grid system uses a series of containers, rows, and columns to layout and align content.
+                    It's built using CSS Grids and are fully responsive on different screens.
                 </p>
             </section>
             <br>
@@ -120,36 +122,59 @@
             <br>
             
             <section class="component-section">
-                <!-- Simple Navigation -->
-                <h3 class="heading-3 comp-heading">Simple Navigation</h3>
+                <!-- Simplified Grid -->
+                <h3 class="heading-3 comp-heading">Simplified Grid</h3>
                 <br>
                 <br>
                 <p class="comp-description para-4">
-                    Simple Navigation can be used by giving the class name <span class="class-to-apply-for-comp">.nav-simple-container</span>. 
-                    Additional classes like <span class="class-to-apply-for-comp">.nav-simple-brand</span>, <span class="class-to-apply-for-comp">.nav-simple-item</span>, <span class="class-to-apply-for-comp">.nav-hamburger-menu</span> can be added inside 
-                    the container. The destination page url can be given in <code class="code">href</code> of <code class="code">&lt;a&gt;</code> tag.
+                    There are two variants of grids available, <code class="code primary-alert-code">2 col layout</code>, and <code class="code primary-alert-code">3 col layout</code>.
+                    Grid layouts can be created by adding the <span class="class-to-apply-for-comp">.grid-2</span>, and <span class="class-to-apply-for-comp">.grid-3</span> classes. 
                 </p>
-
-                <div class="comp-box rounded-lg flex-col-container">
-                    <nav class="nav-simple-container space-S rounded-med">
-                        <a class="nav-simple-brand" href="#">
-                            My Brand
-                        </a>
-
-                        <ul>
-                            <li class="nav-simple-item space-S"><a href="#">Home</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">Products</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">Blog</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">About Us</a></li>
-                            <i class="nav-hamburger-menu space-S fas fa-bars"></i>
-                        </ul>
-                    </nav>
+                <br>
+                <br>
+                <h3 class="heading-3 comp-heading">2 Col Layout</h3>
+                <br>
+                <div class="comp-box grid-layout rounded-lg centered-flex-col-container">
+                    <div class="grid-2">
+                        <div>
+                            <img src="https://picsum.photos/id/1015/600/400" alt="beautiful view" class="img-responsive">
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/id/1022/600/400" alt="beautiful view" class="img-responsive">
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <br>
 
                 <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L537-L549&style=github&showBorder=on&showCopy=on"></script>
+                    
+                </div>
+                <hr class="content-divider">
+                <br>
+                <br>
+                <br>
+
+                <h3 class="heading-3 comp-heading">3 Col Layout</h3>
+                <br>
+                <div class="comp-box grid-layout rounded-lg centered-flex-col-container">
+                    <div class="grid-3">
+                        <div>
+                            <img src="https://picsum.photos/id/1015/600/400" alt="beautiful view" class="img-responsive">
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/id/1022/600/400" alt="beautiful view" class="img-responsive">
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/id/1036/600/400" alt="beautiful view" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    
                 </div>
             </section>
         </main>

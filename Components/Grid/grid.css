@@ -1,0 +1,17 @@
+/* ---------------------> Grid-2 <-----------------------------------------------*/
+.grid-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+    grid-column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+/* ----------------------> Grid - 3 <------------------------------------------  */
+.grid-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-column-gap: 2rem;
+    row-gap: 4rem;
+}
