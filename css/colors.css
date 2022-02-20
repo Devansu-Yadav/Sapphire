@@ -16,6 +16,7 @@
     --hover-color: #d1d5db;
     --box-shadow-color: rgb(0 0 0 / 0.1);
     --code-bg-color: rgba(175, 184, 193, 0.2);
+    --modal-overlay-color: rgba(0,0,0,0.5);
     
     /* Darker Shades of Major colors */
     --default-darker-color: #162F5A;

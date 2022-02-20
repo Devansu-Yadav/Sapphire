@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire: Navigation</title>
+    <title>Sapphire: Modal</title>
     <link rel="stylesheet" href="/css/components.css"/>
     <link rel="stylesheet" href="/css/document.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,11 +18,13 @@
         <div class="navigation centered-flex-row-container">
             <ul class="nav-items centered-flex-row-container">
                 <li class="space-S"><a href="/index.html">Home</a></li>
-                <li class="space-S"><a href="./navigation.html">Documentation</a></li>
+                <li class="space-S"><a href="./modal.html">Documentation</a></li>
             </ul>
             <i id="nav-menu" class="space-S fas fa-bars"></i>
         </div>
     </nav>
+
+    <div class="modal-overlay"></div>
 
     <section class="docs-container space-XXL">
         <aside class="sidebar">
@@ -91,28 +93,25 @@
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./navigation.html">
-                    <div class="sidebar-item-txt link-active">Navigation</div>
-                </a>
-
-                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./snackbar.html">
-                    <div class="sidebar-item-txt link-active">SnackBar</div>
-                </a>
-
-                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./grid.html">
-                    <div class="sidebar-item-txt">Grid</div>
+                    <div class="sidebar-item-txt">Navigation</div>
                 </a>
                 
+                <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./snackbar.html">
+                    <div class="sidebar-item-txt">SnackBar</div>
+                </a>
+
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./modal.html">
-                    <div class="sidebar-item-txt">Modal</div>
+                    <div class="sidebar-item-txt link-active">Modal</div>
                 </a>
             </nav>
         </aside>
 
         <main class="component-container space-XL">
             <section class="comp-intro">
-                <h1 class="heading-1 intro-heading">Navigation</h1>
+                <h1 class="heading-1 intro-heading">Modal</h1>
                 <p class="intro-content para-4">
-                    Navigation bar is helpful for switching between two pages of a website/ web App.
+                    Modals are positioned over everything else in the document and remove scroll from the
+                    <code class="code">&lt;body&gt;</code> so that modal content scrolls instead. 
                 </p>
             </section>
             <br>
@@ -124,36 +123,42 @@
             <br>
             
             <section class="component-section">
-                <!-- Simple Navigation -->
-                <h3 class="heading-3 comp-heading">Simple Navigation</h3>
+                <!-- Simple Modal -->
+                <h3 class="heading-3 comp-heading">Simple Modal</h3>
                 <br>
                 <br>
                 <p class="comp-description para-4">
-                    Simple Navigation can be used by giving the class name <span class="class-to-apply-for-comp">.nav-simple-container</span>. 
-                    Additional classes like <span class="class-to-apply-for-comp">.nav-simple-brand</span>, <span class="class-to-apply-for-comp">.nav-simple-item</span>, <span class="class-to-apply-for-comp">.nav-hamburger-menu</span> can be added inside 
-                    the container. The destination page url can be given in <code class="code">href</code> of <code class="code">&lt;a&gt;</code> tag.
+                    To use a Simple modal component that will slide down and fade in from top of the page, add the <span class="class-to-apply-for-comp">.modal</span> class 
+                    followed by additional classes like <span class="class-to-apply-for-comp">.modal-dialog</span>, <span class="class-to-apply-for-comp">.modal-txt</span>,
+                    <span class="class-to-apply-for-comp">.modal-actions</span>, <span class="class-to-apply-for-comp">.modal-header</span>, and <span class="class-to-apply-for-comp">.modal-action-btns</span>.
                 </p>
 
                 <div class="comp-box rounded-lg flex-col-container">
-                    <nav class="nav-simple-container space-S rounded-med">
-                        <a class="nav-simple-brand" href="#">
-                            My Brand
-                        </a>
+                    <div class="centered-flex-col-container">
+                        <button class="btn btn-primary modal-btn rounded-med space-S">Launch demo modal</button>
+                    </div>
 
-                        <ul>
-                            <li class="nav-simple-item space-S"><a href="#">Home</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">Products</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">Blog</a></li>
-                            <li class="nav-simple-item space-S"><a href="#">About Us</a></li>
-                            <i class="nav-hamburger-menu space-S fas fa-bars"></i>
-                        </ul>
-                    </nav>
+                    <div class="modal centered-flex-col-container">
+                        <div class="modal-header">
+                            <h2 class="heading-2">Modal Title</h2>
+                        </div>
+                        <hr class="divide-nav-items">
+                        <img class="btn-close" src="/assets/images/close-button.svg" alt="Close Button"/>
+                        <p class="modal-txt">
+                            Dialog body Text
+                        </p>
+                        <hr class="divide-nav-items">
+                        <div class="modal-actions flex-row-container">
+                            <button class="btn btn-disable rounded-med space-S">Close</button>
+                            <button class="btn btn-primary rounded-med space-S">Save changes</button>
+                        </div>
+                    </div>
                 </div>
                 <br>
                 <br>
 
                 <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L537-L549&style=github&showBorder=on&showCopy=on"></script>
+                    
                 </div>
             </section>
         </main>
@@ -186,5 +191,6 @@
             </p>
     </footer>
     <script src="../nav-menu.js"></script>
+    <script src="/Components/Modal/modal.js"></script>
 </body>
 </html>
