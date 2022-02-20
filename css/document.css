@@ -240,6 +240,16 @@ body {
     flex-wrap: wrap;
 }
 
+.grid-layout {
+    width: 95%;
+}
+
+.grid-2 div, .grid-3 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .code-snippet {
     display: block;
     width: 90%;
