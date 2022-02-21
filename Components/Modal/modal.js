@@ -12,7 +12,7 @@ modalToggleBtn.addEventListener("click", () => {
     } else {
         modal.classList.remove("show");
         document.body.style.overflow = "auto";
-        modalOverlayBg.style.display = "block";
+        modalOverlayBg.style.display = "none";
         modalOverlayBg.style.backgroundColor = "var(--white-color)";
     }
 })

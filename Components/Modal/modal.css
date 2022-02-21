@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 50%;
-    z-index: 1000;
+    z-index: 4;
     overflow: hidden;
     outline: 0;
     padding: 1rem;
@@ -54,7 +54,7 @@
     width: 1.3rem;
     height: 1.3rem;
     top: 9%;
-    right: 7px;
+    right: 3%;
 }
 
 .modal-actions .btn {
