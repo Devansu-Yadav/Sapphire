@@ -1,0 +1,79 @@
+/* ---------------------------------> Simple Modal <------------------------------------- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 4;
+    overflow: hidden;
+    outline: 0;
+    padding: 1rem;
+    width: 30rem;
+    max-height: 25rem;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    -webkit-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    text-align: left;
+    transform: translate(-50%, -100%);
+    transition: -webkit-transform .3s ease-out;
+    transition: -ms-transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+.modal.show {
+    -webkit-transform: translate(-50%, 10%);
+    -ms-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
+}
+
+.modal-header {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.modal-header .heading-2 {
+    margin-left: 1rem;
+}
+
+.modal-txt {
+    font-size: 2rem;
+    width: 95%;
+    color: var(--content-text-color);
+    margin: 1rem 1rem 2rem 2rem;
+}
+
+.modal-actions {
+    padding: 0 1rem;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.modal .btn-close {
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 9%;
+    right: 3%;
+}
+
+.modal-actions .btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* ------------------------------------> Responsive CSS <--------------------------------- */
+@media only screen and (max-width: 600px) {
+    .modal {
+        width: 25rem;
+    }
+
+    .modal-actions .btn {
+        font-size: 1.4rem;
+    }
+
+    .modal .btn-close {
+        top: 8%;
+    }
+}
