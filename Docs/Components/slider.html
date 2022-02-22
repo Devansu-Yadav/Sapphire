@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapphire: Badge</title>
+    <title>Sapphire: Slider</title>
     <link rel="stylesheet" href="/css/components.css"/>
     <link rel="stylesheet" href="/css/document.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,7 +18,7 @@
         <div class="navigation centered-flex-row-container">
             <ul class="nav-items centered-flex-row-container">
                 <li class="space-S"><a href="/index.html">Home</a></li>
-                <li class="space-S"><a href="./badge.html">Documentation</a></li>
+                <li class="space-S"><a href="./slider.html">Documentation</a></li>
             </ul>
             <i id="nav-menu" class="space-S fas fa-bars"></i>
         </div>
@@ -59,7 +59,7 @@
                 </a>
     
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./badge.html">
-                    <div class="sidebar-item-txt link-active">Badge</div>
+                    <div class="sidebar-item-txt">Badge</div>
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./button.html">
@@ -93,7 +93,7 @@
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./navigation.html">
                     <div class="sidebar-item-txt">Navigation</div>
                 </a>
-
+                
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./snackbar.html">
                     <div class="sidebar-item-txt">SnackBar</div>
                 </a>
@@ -107,16 +107,17 @@
                 </a>
 
                 <a class="sidebar-item centered-flex-row-container space-S rounded-med" href="./slider.html">
-                    <div class="sidebar-item-txt">Slider</div>
+                    <div class="sidebar-item-txt link-active">Slider</div>
                 </a>
             </nav>
         </aside>
 
         <main class="component-container space-XL">
             <section class="comp-intro">
-                <h1 class="heading-1 intro-heading">Badge</h1>
+                <h1 class="heading-1 intro-heading">Slider</h1>
                 <p class="intro-content para-4">
-                    Badges can be combined with Avatars, they are useful for status of user like busy, offline and away. They can also be used on icons for notifications.
+                    You can use Range Sliders to specify a numeric value which must be no less than a given value, and no more than another given value. 
+                    The precise value, however, is not considered important. 
                 </p>
             </section>
             <br>
@@ -128,105 +129,33 @@
             <br>
             
             <section class="component-section">
-                <!-- Badges on Image Avatars -->
-                <h3 class="heading-3 comp-heading">Badges on Image Avatars</h3>
+                <!-- Simple Alert -->
+                <h3 class="heading-3 comp-heading">Default Range Slider</h3>
                 <br>
                 <br>
                 <p class="comp-description para-4">
-                    The First variant of Badge is for Round Image Avatars. For Badges on Round Image avatars, use the <span class="class-to-apply-for-comp">.badge-round-avatar</span> class.
-                    As the avatar size changes, badge sizes differ using the <span class="class-to-apply-for-comp">.badge-sm</span> | <span class="class-to-apply-for-comp">.badge-md</span>
-                    | <span class="class-to-apply-for-comp">.badge-lg</span> | <span class="class-to-apply-for-comp">.badge-xs</span> classes. Based on the user status, you can also use different badges
-                    like <span class="class-to-apply-for-comp">.badge-busy</span>, <span class="class-to-apply-for-comp">.badge-online</span>, <span class="class-to-apply-for-comp">.badge-away</span>.
+                    To add a Default Slider, just use the <span class="class-to-apply-for-comp">.range-slider-default</span> class. You can 
+                    also add the following classes -  <span class="class-to-apply-for-comp">.range-slider-value</span>, <span class="class-to-apply-for-comp">.range-slider-input</span>,
+                    <span class="class-to-apply-for-comp">.range-slider-field</span>, and <span class="class-to-apply-for-comp">.range-slider-field-val</span>.
                 </p>
 
-                <div class="comp-box rounded-lg centered-flex-row-container">
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-5.jpg" class="avatar avatar-lg"/>
-                        <span class="badge-round-avatar badge-lg badge-busy"></span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-2.jpg" class="avatar avatar-md"/>
-                        <span class="badge-round-avatar badge-md badge-online"></span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-4.jpg" class="avatar avatar-sm"/>
-                        <span class="badge-round-avatar badge-sm badge-away"></span>
+                <div class="comp-box rounded-lg centered-flex-col-container">
+                    <div class="range-slider-default">
+                        <div class="range-slider-value">
+                            <span>₹2,000</span>
+                        </div>
+                        <div class="range-slider-field">
+                            <span class="range-slider-field-val font-semi-bold range-slider-field-val-left">₹10</span>
+                            <input type="range" min="10" max="200" id="range-slider-input" value="100" steps="1">
+                            <span class="range-slider-field-val font-semi-bold range-slider-field-val-right">₹200</span>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <br>
 
                 <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L68-L81&style=github&showBorder=on&showCopy=on"></script>
-                </div>
-
-                <hr class="content-divider">
-                <br>
-                <br>
-                <br>
-
-                <!-- Badge on Square Image Avatars -->
-                <p class="comp-description para-4">
-                    The second variant of Badge is for Square Image Avatars, only difference is that you have to add the <span class="class-to-apply-for-comp">.badge-square-avatar</span> class.
-                </p>
-                <div class="comp-box rounded-lg centered-flex-row-container">
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-5.jpg" class="avatar avatar-lg avatar-square"/>
-                        <span class="badge-square-avatar badge-lg badge-busy"></span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-2.jpg" class="avatar avatar-md avatar-square"/>
-                        <span class="badge-square-avatar badge-md badge-online"></span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <img src="/assets/images/avatar-4.jpg" class="avatar avatar-sm avatar-square"/>
-                        <span class="badge-square-avatar badge-sm badge-away"></span>
-                    </div>
-                </div>
-                <br>
-                <br>
-
-                <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L84-L97&style=github&showBorder=on&showCopy=on"></script>
-                </div>
-                <hr class="content-divider">
-                <br>
-                <br>
-                <br>
-
-                <!-- Badge on Icons -->
-                <h3 class="heading-3 comp-heading">Badge on Icons</h3>
-                <br>
-                <br>
-                <p class="comp-description para-4">
-                    For Icons, you can add these four classes <span class="class-to-apply-for-comp">.badge-icon</span>, <span class="class-to-apply-for-comp">.badge-number</span>, <span class="class-to-apply-for-comp">.badge-left</span>, <span class="class-to-apply-for-comp">.badge-right</span>.
-                </p>
-
-                <div class="comp-box rounded-lg centered-flex-row-container">
-                    <div class="badge space-XS">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="badge-icon badge-number badge-left">99</span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="badge-icon badge-number badge-right">99</span>
-                    </div>
-
-                    <div class="badge space-XS">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="badge-icon badge-number badge-right">99+</span>
-                    </div>
-                </div>
-                <br>
-                <br>
-
-                <div class="code-snippet">
-                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L100-L113&style=github&showBorder=on&showCopy=on"></script>
+                    
                 </div>
             </section>
         </main>
@@ -257,7 +186,8 @@
             <p class="copyright">
                 © 2022 | Sapphire
             </p>
-        </footer>
+    </footer>
     <script src="../nav-menu.js"></script>
+    <script src="/Components/Slider/slider.js"></script>
 </body>
 </html>
