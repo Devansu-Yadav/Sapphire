@@ -18,8 +18,12 @@
     background-color: var(--code-bg-color);
 }
 
-.input-primary:focus, .input-error:focus {
+.input-primary:focus {
     border: 1px solid var(--primary-color);
+}
+
+.input-error:focus {
+    border: 1px solid var(--danger-color);
 }
 
 /* ---------------------------------------> Radio Button <----------------------------------- */
