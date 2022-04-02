@@ -72,3 +72,33 @@ inputSlider.addEventListener('input', () => {
 inputSlider.addEventListener('blur', () => {
     slideValue.classList.remove("showSliderVal");
 });
+
+// JavaScript code for Navigation SubMenu & Hamburger
+const subMenuToggle = document.querySelector(".navigation-panel .nav-submenu-item-dropdown-toggle");
+const navDropDownMenu = document.querySelector(".navigation-panel .nav-dropdown-menu");
+const hamburgerBtn = document.querySelector(".hamburger-btn");
+const navigationPanel = document.querySelector(".navigation-panel-collapse");
+const navigationSubMenuToggle = document.querySelector(".navigation-panel-collapse .nav-submenu-item-dropdown-toggle");
+const navigationSubMenuDropdown = document.querySelector(".navigation-panel-collapse .nav-dropdown-menu");
+
+subMenuToggle.addEventListener("click", () => {
+    navDropDownMenu.classList.toggle("show-menu");
+});
+
+hamburgerBtn.addEventListener("click", () => {
+    if (navigationPanel.style.maxHeight) {
+        navigationPanel.style.maxHeight = null;
+    } else {
+        navigationPanel.style.maxHeight = navigationPanel.scrollHeight + "px";
+    }
+});
+
+navigationSubMenuToggle.addEventListener("click", () => {
+    if(navigationSubMenuDropdown.style.maxHeight) {
+        navigationSubMenuDropdown.style.maxHeight = null;
+        navigationPanel.style.overflow = "hidden";
+    } else {
+        navigationSubMenuDropdown.style.maxHeight = navigationSubMenuDropdown.scrollHeight + "px";
+        navigationPanel.style.overflow = "auto";
+    }
+});
