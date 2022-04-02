@@ -4,6 +4,7 @@ const navigationSubMenuToggle = document.querySelector(".navigation-panel-collap
 const navigationSubMenuDropdown = document.querySelector(".navigation-panel-collapse .nav-dropdown-menu");
 
 hamburgerBtn.addEventListener("click", () => {
+    // Collapse or Open Navigation panel on Hamburger Btn click
     if (navigationPanel.style.maxHeight) {
         navigationPanel.style.maxHeight = null;
     } else {
@@ -12,6 +13,7 @@ hamburgerBtn.addEventListener("click", () => {
 });
 
 navigationSubMenuToggle.addEventListener("click", () => {
+    // Collapse or Open Navigation SubMenu on SubMenu toggle Btn click.
     if(navigationSubMenuDropdown.style.maxHeight) {
         navigationSubMenuDropdown.style.maxHeight = null;
         navigationPanel.style.overflow = "hidden";
