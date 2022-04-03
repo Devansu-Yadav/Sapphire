@@ -22,11 +22,12 @@ To use Sapphire in your projects, just copy the below code snippet and paste it 
 - Text Utilities
 - Lists
 - Ratings
-- Navigation
+- Navigation (Desktop)
 - SnackBar
 - Grid
 - Modal
 - Range Slider
+- Navigation (With SubMenu & Hamburger menu)
 
 ## Live
 [Sapphire](https://sapphire-ui.netlify.app/)
