@@ -26,6 +26,7 @@ To use Sapphire in your projects, just copy the below code snippet and paste it 
 - SnackBar
 - Grid
 - Modal
+- Range Slider
 
 ## Live
 [Sapphire](https://sapphire-ui.netlify.app/)
