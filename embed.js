@@ -33,29 +33,35 @@ const onClickHandler = elem => {
 // JavaScript Code Snippet for Modal
 const modalToggleBtn = document.querySelector(".modal-btn");
 const modal = document.querySelector(".modal");
-const closeBtn = document.querySelector(".btn-close");
+const cancelBtn = document.querySelector(".btn-close");
+const closeBtn = document.querySelector(".close-btn");
 const modalOverlayBg = document.querySelector(".modal-overlay");
 
-modalToggleBtn.addEventListener("click", () => {
-    if(!modal.classList.contains("show")) {
-        modal.classList.add("show");
-        document.body.style.overflow = "hidden";
-        modalOverlayBg.style.display = "block";
-        modalOverlayBg.style.backgroundColor = "var(--modal-overlay-color)";
-    } else {
-        modal.classList.remove("show");
-        document.body.style.overflow = "auto";
-        modalOverlayBg.style.display = "block";
-        modalOverlayBg.style.backgroundColor = "var(--white-color)";
-    }
-})
+const showModal = () => {
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden";
+    modalOverlayBg.style.display = "block";
+    modalOverlayBg.style.backgroundColor = "var(--modal-overlay-color)";
+}
 
-closeBtn.addEventListener("click", () => {
+const hideModal = () => {
     modal.classList.remove("show");
     document.body.style.overflow = "auto";
     modalOverlayBg.style.display = "none";
     modalOverlayBg.style.backgroundColor = "var(--white-color)";
+}
+
+modalToggleBtn.addEventListener("click", () => {
+    if(!modal.classList.contains("show")) {
+        showModal();
+    } else {
+       hideModal();
+    }
 })
+
+cancelBtn.addEventListener("click", () => hideModal());
+
+closeBtn.addEventListener("click", () => hideModal());
 
 // JavaScript code snippet for Slider component
 const slideValue = document.querySelector(".range-slider-value span");
