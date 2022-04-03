@@ -160,6 +160,63 @@
                     <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L537-L549&style=github&showBorder=on&showCopy=on"></script>
                 </div>
             </section>
+
+            <section class="component-section">
+                <!-- Navigation with SubMenus & Hamburger -->
+                <h3 class="heading-3 comp-heading">Navigation with Submenu & Hamburger</h3>
+                <br>
+                <br>
+                <p class="comp-description para-4">
+                    This type of Navigation can be used by giving the class name <span class="class-to-apply-for-comp">.nav-with-submenu-container</span>. 
+                    Additional classes like <span class="class-to-apply-for-comp">.nav-simple-brand</span>, <span class="class-to-apply-for-comp">.hamburger-btn</span>, <span class="class-to-apply-for-comp">.nav-simple-item</span>, <span class="class-to-apply-for-comp">.nav-submenu-item</span>, 
+                    <span class="class-to-apply-for-comp">.nav-dropdown-menu</span>, <span class="class-to-apply-for-comp">.nav-submenu-item-dropdown-toggle</span>, 
+                    <span class="class-to-apply-for-comp">.nav-dropdown-item</span> can be added inside the container.
+                </p>
+
+                <div class="comp-box rounded-lg flex-col-container">
+                    <nav class="nav-with-submenu-container space-S rounded-med">
+                        <a class="nav-simple-brand" href="#">
+                            My Brand
+                        </a>
+
+                        <button class="hamburger-btn"><i class="space-S fas fa-bars"></i></button>
+                        <ul class="navigation-panel">
+                            <li class="nav-simple-item space-S"><a href="#">Home</a></li>
+                            <li class="nav-simple-item nav-submenu-item space-S">
+                                <a class="nav-submenu-item-dropdown-toggle">Products</a>
+                                <div class="nav-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="nav-dropdown-item" href="#">Product 1</a>
+                                    <a class="nav-dropdown-item" href="#">Product 2</a>
+                                    <a class="nav-dropdown-item" href="#">Product 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-simple-item space-S"><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="navigation-panel-collapse">
+                        <li class="nav-simple-item"><a href="#">Home</a></li>
+                        <li class="nav-simple-item nav-submenu-item">
+                            <a class="nav-submenu-item-dropdown-toggle">Products</a>
+                            <div class="nav-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-dropdown-item" href="#">Product 1</a>
+                                <a class="nav-dropdown-item" href="#">Product 2</a>
+                                <a class="nav-dropdown-item" href="#">Product 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-simple-item"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+
+                <div class="code-snippet">
+                    <b>HTML</b>
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.html%23L638-L669&style=github&showBorder=on&showCopy=on"></script>
+
+                    <b>JavaScript</b>
+                    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FDevansu-Yadav%2FSapphire%2Fblob%2FembedBranch%2Fembed.js%23L76-L104&style=github&showBorder=on&showCopy=on"></script>
+                </div>
+            </section>
         </main>
     </section>
     <footer class="footer-container centered-flex-col-container">
@@ -190,5 +247,7 @@
             </p>
     </footer>
     <script src="../nav-menu.js"></script>
+    <script src="../../Components/Navigation/navigation-submenu.js"></script>
+    <script src="../../Components/Navigation/navigation-collapse.js"></script>
 </body>
 </html>
