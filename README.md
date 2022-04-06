@@ -30,7 +30,7 @@ To use Sapphire in your projects, just copy the below code snippet and paste it 
 - Navigation (With SubMenu & Hamburger menu)
 
 ## Live
-[Sapphire](https://sapphire-ui.netlify.app/)
+[Sapphire "test-dev" branch Preview Link](https://temp-dev--sapphire-ui.netlify.app/)
 
 ## Demo
 ![Demo](https://github.com/Devansu-Yadav/Sapphire/blob/embedBranch/assets/Sapphire-updated-demo-video.gif)
